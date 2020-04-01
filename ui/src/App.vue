@@ -1,18 +1,21 @@
 <template>
   <div id="app">
+
     <img alt="Vue logo" src="./assets/logo.png">
-    <MenuTest2 msg="Welcome to Your Vue.js App"/>
+
+   <Form1 msg="Welcome to Your Vue.js App"/>
+
   </div>
 </template>
 
 <script>
 //import HelloWorld from './components/HelloWorld.vue'
-import MenuTest2 from './components/MenuTest2.vue'
+import Form1 from './components/form1.vue'
 
 export default {
   name: 'App',
   components: {
-    MenuTest2
+    Form1
   }
 }
 </script>
