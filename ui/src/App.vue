@@ -1,21 +1,34 @@
 <template>
   <div id="app">
 
-    <img alt="Vue logo" src="./assets/logo.png">
+<b-container fluid class="bv-example-row">
 
-   <Form1 msg="Welcome to Your Vue.js App"/>
+  <b-row>
+    <b-col cols="2">
+        <Menu />
+    </b-col>
+    <b-col cols="10">
+        <img alt="Vue logo" src="./assets/logo.png">
+        <Form msg="Welcome to Your Vue.js App"/>
+    </b-col>
+  </b-row>
+</b-container>
 
   </div>
 </template>
 
 <script>
 //import HelloWorld from './components/HelloWorld.vue'
-import Form1 from './components/form1.vue'
+import Form from './components/form1.vue'
+//import Menu from './components/MenuTest2.vue'
+import Menu from './components/MenuTest.vue'
 
 export default {
   name: 'App',
   components: {
-    Form1
+        Form,
+//    Menu
+        Menu
   }
 }
 </script>

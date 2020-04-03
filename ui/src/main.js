@@ -22,6 +22,9 @@ Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 Vue.config.productionTip = false;
 
+import VueSimpleMenu from "vue-simple-menu";
+Vue.component("vue-simple-menu", VueSimpleMenu);
+
 new Vue({
   render: h => h(App)
 }).$mount("#app");

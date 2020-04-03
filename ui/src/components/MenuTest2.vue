@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
 
-    <h1>{{msg}}</h1>
+<!--    <h1>{{msg}}</h1>  -->
 
     <div>
       <b-nav small vertical class="w-25">

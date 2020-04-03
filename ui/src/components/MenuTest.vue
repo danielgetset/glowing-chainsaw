@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
 
-    <sidebar-menu theme="white-theme" :menu="menu" />
+    <sidebar-menu relative="true"  hideToggle="true" width="250px" theme="white-theme" :menu="menu" />
     <h1>{{msg}}</h1>
   </div>
 </template>
@@ -15,6 +15,20 @@ export default {
       type: String,
       default: ''
     },
+    // Sidebar width (expanded)
+    width: {
+      type: String,
+      default: '350px'
+    },
+    // Hide toggle collapse btn
+    hideToggle: {
+      type: Boolean,
+      default: false
+    },
+    relative: {
+      type: Boolean,
+      default: false
+    },
   },
   data() {
             return {
@@ -27,34 +41,16 @@ export default {
                     {
                         href: '/',
                         title: 'item 1',
-                        icon: {
-                            element: "font-awesome-icon",
-                            attributes: {
-                                icon: "user-secret"
-                            }
-                        }
+//                        icon: {
+//                            element: "font-awesome-icon",
+//                            attributes: {
+//                                icon: "user-secret"
+//                            }
+//                        }
                     },
                     {
-                        href: '/charts',
-                        title: 'Charts',
-                        icon: {
-                            element: "font-awesome-icon",
-                            attributes: {
-                                icon: "user-secret"
-                            }
-                        },
-                        child: [
-                            {
-                                href: '/charts/sublink',
-                                title: 'Sub Link',
-                                icon: {
-                                    element: "font-awesome-icon",
-                                    attributes: {
-                                        icon: "user-secret"
-                                    }
-                                },
-                            }
-                        ]
+                        href: '/',
+                        title: 'Item 1',
                     },
 
                     {
@@ -66,100 +62,46 @@ export default {
                     {
                         href: '/',
                         title: 'item 1',
-                        icon: {
-                            element: "font-awesome-icon",
-                            attributes: {
-                                icon: "user-secret"
-                            }
-                        }
                     },
 
                     {
                         href: '/',
                         title: 'item 2',
-                        icon: {
-                            element: "font-awesome-icon",
-                            attributes: {
-                                icon: "user-secret"
-                            }
-                        }
                     },
 
                     {
                         href: '/',
                         title: 'item 3',
-                        icon: {
-                            element: "font-awesome-icon",
-                            attributes: {
-                                icon: "user-secret"
-                            }
-                        }
                     },
 
                     {
                         href: '/',
                         title: 'item 1',
-                        icon: {
-                            element: "font-awesome-icon",
-                            attributes: {
-                                icon: "user-secret"
-                            }
-                        }
                     },
 
                     {
                         href: '/',
                         title: 'item 2',
-                        icon: {
-                            element: "font-awesome-icon",
-                            attributes: {
-                                icon: "user-secret"
-                            }
-                        }
                     },
 
                     {
                         href: '/',
                         title: 'item 3',
-                        icon: {
-                            element: "font-awesome-icon",
-                            attributes: {
-                                icon: "user-secret"
-                            }
-                        }
                     },
 
                     {
                         href: '/',
                         title: 'item 1',
-                        icon: {
-                            element: "font-awesome-icon",
-                            attributes: {
-                                icon: "user-secret"
-                            }
-                        }
                     },
 
                     {
                         href: '/',
                         title: 'item 2',
-                        icon: {
-                            element: "font-awesome-icon",
-                            attributes: {
-                                icon: "user-secret"
-                            }
-                        }
                     },
 
                     {
                         href: '/',
                         title: 'item 3',
-                        icon: {
-                            element: "font-awesome-icon",
-                            attributes: {
-                                icon: "user-secret"
-                            }
-                        }
                     },
                     {
                         header: true,
@@ -170,12 +112,6 @@ export default {
                     {
                         href: '/',
                         title: 'item 1',
-                        icon: {
-                            element: "font-awesome-icon",
-                            attributes: {
-                                icon: "user-secret"
-                            }
-                        }
                     },
                     {
                         header: true,
@@ -186,12 +122,6 @@ export default {
                     {
                         href: '/',
                         title: 'item 1',
-                        icon: {
-                            element: "font-awesome-icon",
-                            attributes: {
-                                icon: "user-secret"
-                            }
-                        }
                     },
                 ]
             }
