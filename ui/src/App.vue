@@ -4,10 +4,10 @@
 <b-container fluid class="bv-example-row">
 
   <b-row>
-    <b-col cols="2">
-        <Menu />
+    <b-col md="3" xl="2">
+        <Sidebar  />
     </b-col>
-    <b-col cols="10">
+    <b-col md="9" xl="8">
         <img alt="Vue logo" src="./assets/logo.png">
         <Form msg="Welcome to Your Vue.js App"/>
     </b-col>
@@ -20,15 +20,15 @@
 <script>
 //import HelloWorld from './components/HelloWorld.vue'
 import Form from './components/form1.vue'
+import Sidebar from './components/SideBar.vue'
 //import Menu from './components/MenuTest2.vue'
-import Menu from './components/MenuTest.vue'
+//import Menu from './components/MenuTest.vue'
 
 export default {
   name: 'App',
   components: {
         Form,
-//    Menu
-        Menu
+        Sidebar
   }
 }
 </script>
